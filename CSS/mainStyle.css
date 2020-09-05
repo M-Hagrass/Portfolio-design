@@ -1,0 +1,21 @@
+/* CSS Variables */
+/* font family variables. */
+nav ul li {
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: black;
+  font-family: 'Roboto', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #4458dc;
+  font-size: 1rem;
+}
+
+nav ul li .active {
+  color: #4458dc;
+}

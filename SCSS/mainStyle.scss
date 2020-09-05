@@ -1,0 +1,24 @@
+@import 'variables';
+// @import 'global';
+
+nav {
+  ul {
+    li{
+      padding: 1rem;
+        a {
+          color: black;
+          font-family: 'Roboto', cursive;
+          text-transform: uppercase;
+          font-weight: 500;
+            &:hover { 
+              color: $primary-color;
+              font-size: 1rem;
+            }
+        }
+        .active {
+          color: $primary-color;
+        }
+    }
+    
+  }
+}
