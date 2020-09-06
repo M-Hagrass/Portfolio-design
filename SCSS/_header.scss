@@ -1,0 +1,49 @@
+// Start mobile and small devices styles with width at breakpoints from "XS 0PX" to "MD 767px"
+
+nav {
+  .custom-toggler {
+    border-color: #4458dc;
+    margin-top: 5px;
+      // .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(68, 88, 220, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+      .navbar-toggler-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4458dcb3;
+      }
+  } 
+    
+  ul {
+    margin-top: 15px;
+    li{ 
+        a {
+          color: $title-color;
+          font-family: $roboto;
+          text-transform: uppercase;
+            &:hover {
+              color: $primary-color;
+              background-color: #f0f0f0;
+            }
+        }
+          .active {
+            color: $primary-color;
+          }
+      }   
+  }
+}
+
+// Start medium and lage screen devices styles with width at breakpoints from "MD 768PX" to "XL >1200px"
+
+@media (min-width: 768px){
+  nav {
+    ul{
+      li {
+        padding: 0 0 0 3rem !important;
+        a {
+          padding: 0 !important;
+          &:hover{background-color: transparent !important;}
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,50 @@
 /* CSS Variables */
 /* font family variables. */
-nav ul li {
-  padding: 1rem;
+nav .custom-toggler {
+  border-color: #4458dc;
+  margin-top: 5px;
+}
+
+nav .custom-toggler .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4458dcb3;
+}
+
+nav ul {
+  margin-top: 15px;
 }
 
 nav ul li a {
-  color: black;
-  font-family: 'Roboto', cursive;
+  color: #141313;
+  font-family: "Roboto", cursive;
   text-transform: uppercase;
-  font-weight: 500;
 }
 
 nav ul li a:hover {
   color: #4458dc;
-  font-size: 1rem;
+  background-color: #f0f0f0;
 }
 
 nav ul li .active {
   color: #4458dc;
+}
+
+@media (min-width: 768px) {
+  nav ul li {
+    padding: 0 0 0 3rem !important;
+  }
+  nav ul li a {
+    padding: 0 !important;
+  }
+  nav ul li a:hover {
+    background-color: transparent !important;
+  }
 }
