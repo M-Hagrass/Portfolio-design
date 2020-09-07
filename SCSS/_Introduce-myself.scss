@@ -1,0 +1,57 @@
+// Start main "Introduce myself" section
+.introMain {
+
+  // Introduce myself part one
+  .intro-part-one{
+    background-image: url('../Images/intro-part-one/home-banner.png');
+    background-size: cover;
+    .info-about{
+      @media (min-width: 991px){
+        display: flex;
+        align-items: center;
+      }
+      // .posion-block{
+      //   @media (min-width: 992px){
+      //     position: absolute;
+      //     top: 50%;
+      //     margin-top: -123px;
+      //   }
+      // }
+      h3{
+        font-size: 3rem;
+        &::after{
+          content: "";
+          height: 2px;
+          width: 12vw;
+          background-color: #000;
+          display: inline-block;
+          transform: translatey(-1.2rem);
+          margin-left: 1rem;
+          }
+      }
+      h2{font-size: 4rem;}
+    }
+  }
+
+  // Introduce myself part two
+  .intro-part-two{
+    h2{
+      font-size: 3rem;
+      @media (max-width: 575px){font-size: 1.8rem;}
+      letter-spacing: 20px;
+      line-height: 1.5;
+      span{display: block;}
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

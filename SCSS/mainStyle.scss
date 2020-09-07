@@ -1,8 +1,15 @@
 // Import global variables
 @import 'variables';
 
-// Will import extra global styles later
-// @import 'global';
+// Import extra global styles
+@import 'global';
 
 // Import header section
 @import 'header';
+
+// Import Introduce-myself section
+@import 'Introduce-myself';
+
+.test{
+  height: 600px;
+}

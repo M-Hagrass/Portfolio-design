@@ -1,5 +1,106 @@
 /* CSS Variables */
 /* font family variables. */
+body {
+  font-family: "Roboto", cursive;
+}
+
+/* Global Classes */
+.title-text {
+  font: normal bold 50px/72px "Roboto", cursive;
+}
+
+/* Buttons */
+.button {
+  padding: .8rem 2.2rem;
+  font: normal 700 16px/20px "Roboto", cursive;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  margin-right: 1rem;
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after, .button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
+}
+
+.button.secondary-button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: whitesmoke;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+p.paragraph {
+  color: #777777;
+  font: normal 500 16px/25px "Roboto", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", cursive;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.title-h1 {
+  font: normal bold 39px/40px "Roboto", cursive;
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  z-index: 999;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
 nav .custom-toggler {
   border-color: #4458dc;
   margin-top: 5px;
@@ -37,7 +138,7 @@ nav ul li .active {
   color: #4458dc;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav ul li {
     padding: 0 0 0 3rem !important;
   }
@@ -47,4 +148,59 @@ nav ul li .active {
   nav ul li a:hover {
     background-color: transparent !important;
   }
+}
+
+.introMain .intro-part-one {
+  background-image: url("../Images/intro-part-one/home-banner.png");
+  background-size: cover;
+}
+
+@media (min-width: 991px) {
+  .introMain .intro-part-one .info-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.introMain .intro-part-one .info-about h3 {
+  font-size: 3rem;
+}
+
+.introMain .intro-part-one .info-about h3::after {
+  content: "";
+  height: 2px;
+  width: 12vw;
+  background-color: #000;
+  display: inline-block;
+  -webkit-transform: translatey(-1.2rem);
+          transform: translatey(-1.2rem);
+  margin-left: 1rem;
+}
+
+.introMain .intro-part-one .info-about h2 {
+  font-size: 4rem;
+}
+
+.introMain .intro-part-two h2 {
+  font-size: 3rem;
+  letter-spacing: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 575px) {
+  .introMain .intro-part-two h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.introMain .intro-part-two h2 span {
+  display: block;
+}
+
+.test {
+  height: 600px;
 }
