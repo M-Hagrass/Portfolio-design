@@ -44,14 +44,38 @@
     }
   }
 
+  // Introduce myself part three
+  .intro-part-three{
+    .logos-container{
+      .row{
+        .logo-container{
+          display: flex;
+          justify-content: space-around;
+          padding: 10px 15px;
+          .logo{
+            display: flex;
+            justify-content: center;
+            padding:25px 0px;
+            width: 140px;
+            cursor:pointer;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            transition: all 0.4s ease;
+            &:hover{
+              box-shadow: 0px 0px 20px $primary-color;
+              transform: scale(1.1);
+              img{filter: brightness(0.15);}
+            }
+            img{
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
 
 
-
-
-
-
-
-
-
+  
 
 }
