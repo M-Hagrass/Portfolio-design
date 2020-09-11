@@ -45,6 +45,7 @@
   }
 
   // Introduce myself part three
+      // Logos section
   .intro-part-three{
     .logos-container{
       .row{
@@ -75,7 +76,63 @@
     }
   }
 
+    // years-exp section
+  .years-exp-container{
+    padding: 0px;
+    position: relative;
+    .img-contacts{
+        position: absolute;
+        left: -5px;
+        top: 22px;
+        z-index: 1;
+      }
 
-  
-
+    .years-exp{
+      width: 80%;
+      background-color: #fef7f7;
+      height: 20rem;;
+      position: relative;
+      left: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .years-number{
+        position: relative;
+        padding: 1.5rem 0 0 2rem;
+        display: flex;
+          .first-h3{
+            h3{
+              color: $primary-color2;
+              font-size: 6rem;
+              margin-right: 1rem;
+            }
+          }
+          .second-h3{
+            position: relative;
+            h3{
+              position: absolute;
+              top: 10px;
+              font-size: 1.5rem;
+              span{
+                display: block;
+                
+              }
+            }
+          }
+      }
+      .contacts{
+        &::before{
+          content: "\f879";
+          font-family: "Font Awesome 5 Pro";
+          padding-right: .5rem;
+          font-weight: 900;
+          font-size: 3rem;
+        }
+        padding: 0 0 1.5rem 4rem;
+       .call-now{
+         a{font-size: 2rem;}
+        }
+      }
+    }
+  }
 }
