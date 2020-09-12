@@ -30,8 +30,8 @@ body {
   color: whitesmoke;
   -webkit-transition: background .6s ease;
   transition: background .6s ease;
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 0px 20px #4458dc;
+          box-shadow: 0px 0px 20px #4458dc;
   margin-right: 1rem;
 }
 
@@ -65,8 +65,8 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   color: whitesmoke;
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 0px 20px #4458dc;
+          box-shadow: 0px 0px 20px #4458dc;
 }
 
 p.paragraph {
@@ -99,8 +99,8 @@ button:hover
   left: 0;
   right: 0;
   background: #ffffff;
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 0px 20px #4458dc;
+          box-shadow: 0px 0px 20px #4458dc;
   z-index: 999;
   -webkit-transition: background 1s ease;
   transition: background 1s ease;
@@ -318,6 +318,44 @@ nav ul li .active {
 
 .introMain .years-exp-container .years-exp .contacts .call-now a {
   font-size: 2rem;
+}
+
+.services-offers .skills .skill-container {
+  margin: 1rem 0;
+}
+
+.services-offers .skills .skill-container .skill {
+  margin: 0 auto;
+  text-align: center;
+  width: 15rem;
+  background-color: rgba(248, 252, 253, 0.973);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+}
+
+.services-offers .skills .skill-container .skill:hover {
+  -webkit-box-shadow: 0px 0px 20px #4458dc;
+          box-shadow: 0px 0px 20px #4458dc;
+}
+
+.services-offers .skills .skill-container .skill h5 {
+  font-weight: bold;
+}
+
+.services-offers .skills .skill-container .skill p {
+  color: #6c757d;
+  padding: 0 0.5rem;
+  margin: 0px;
 }
 
 .test {
