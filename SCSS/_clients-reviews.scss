@@ -1,0 +1,42 @@
+
+.clients-reviews{
+
+  // owl-dots
+  .owl-theme{
+    .owl-dots{
+      .owl-dot{
+        &:hover span,&.active span{background: $primary-color;}
+      }
+    }
+  }
+
+  // owl-carousel
+  .owl-carousel{
+    .owl-item{
+      padding: 0.5rem;
+    }
+    .client-container{
+      padding: 1rem 0;
+      box-shadow: 0px 0px 0.5rem #4458dc;
+      align-items: center;
+      border-radius: 3px;
+      width: 75%;
+      margin: 0.7rem auto;
+      @media(min-width: 576px){width: auto;}
+      .client-img{
+        img{border-radius: 0.5rem;}
+      }
+
+      .client-info {
+        h3{
+          color: crimson;
+          text-transform: capitalize;
+          opacity: 0.8;
+          font-size: 1.5rem;
+        }
+        p.paragraph{margin: 0px;}
+      }
+      
+    }
+  }
+}
