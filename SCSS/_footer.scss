@@ -1,0 +1,10 @@
+
+footer.footer-area{
+  padding: 2rem 0;
+  background: url(../Images/footer-bg.png) no-repeat;
+  a>i{
+    padding: 1.4rem;
+    color: #201f1f17;
+    &:hover{color: $primary-color}
+  }
+}

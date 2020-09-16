@@ -2,7 +2,7 @@
 .subscribe-section{
 
   .subscribe{
-    padding: 10rem 0.3rem;
+    padding: 5rem 0.3rem;
     background: url(/Images/subscribe-bg.png) no-repeat;
     margin: 0px auto;
     h2{
@@ -11,6 +11,7 @@
     }
     p{
       font-size: 0.8rem;
+      margin: 1.2rem 0;
       @media(min-width: 768px){font-size: 1rem;}
     }
     .input-container{
@@ -31,8 +32,12 @@
           }
           &::placeholder{
             color: #fff;
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             text-align: center;
+            @media(min-width: 576px){
+              font-size: 1rem;
+              text-align: left;
+            }
           }
         }
         &:last-child{
