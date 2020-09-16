@@ -1,0 +1,44 @@
+
+.subscribe-section{
+
+  .subscribe{
+    padding: 10rem 0.3rem;
+    background: url(/Images/subscribe-bg.png) no-repeat;
+    margin: 0px auto;
+    h2{
+      font-size: 1.3rem;
+      @media(min-width: 768px){font-size: 2.5rem;}
+    }
+    p{
+      font-size: 0.8rem;
+      @media(min-width: 768px){font-size: 1rem;}
+    }
+    .input-container{
+      height: 3rem;
+      input{
+        height: inherit;
+        &:first-child{
+          width: 50%;
+          height: inherit;
+          background: transparent;
+          color: #fff;
+          border: 1px solid #fff;
+          padding: 1rem;
+          margin-right: 0.5rem;
+          &:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+          }
+          &::placeholder{
+            color: #fff;
+            font-size: 0.8rem;
+            text-align: center;
+          }
+        }
+        &:last-child{
+          padding: 0 1.5rem;
+        }
+      }
+    }
+  }
+}

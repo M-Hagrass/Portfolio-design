@@ -1,6 +1,9 @@
 
 .clients-reviews{
-
+  h2:first-child{
+    font-size: 1.8rem;
+    @media(min-width: 576px){font-size: 2.8rem;}
+  }
   // owl-dots
   .owl-theme{
     .owl-dots{

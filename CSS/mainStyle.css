@@ -358,6 +358,16 @@ nav ul li .active {
   margin: 0px;
 }
 
+.clients-reviews h2:first-child {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 576px) {
+  .clients-reviews h2:first-child {
+    font-size: 2.8rem;
+  }
+}
+
 .clients-reviews .owl-theme .owl-dots .owl-dot:hover span, .clients-reviews .owl-theme .owl-dots .owl-dot.active span {
   background: #4458dc;
 }
@@ -397,6 +407,84 @@ nav ul li .active {
 
 .clients-reviews .owl-carousel .client-container .client-info p.paragraph {
   margin: 0px;
+}
+
+.subscribe-section .subscribe {
+  padding: 10rem 0.3rem;
+  background: url(/Images/subscribe-bg.png) no-repeat;
+  margin: 0px auto;
+}
+
+.subscribe-section .subscribe h2 {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .subscribe-section .subscribe h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.subscribe-section .subscribe p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .subscribe-section .subscribe p {
+    font-size: 1rem;
+  }
+}
+
+.subscribe-section .subscribe .input-container {
+  height: 3rem;
+}
+
+.subscribe-section .subscribe .input-container input {
+  height: inherit;
+}
+
+.subscribe-section .subscribe .input-container input:first-child {
+  width: 50%;
+  height: inherit;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+
+.subscribe-section .subscribe .input-container input:first-child:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.subscribe-section .subscribe .input-container input:first-child::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subscribe-section .subscribe .input-container input:first-child:-ms-input-placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subscribe-section .subscribe .input-container input:first-child::-ms-input-placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subscribe-section .subscribe .input-container input:first-child::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subscribe-section .subscribe .input-container input:last-child {
+  padding: 0 1.5rem;
 }
 
 .test {
