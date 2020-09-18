@@ -452,7 +452,7 @@ nav ul li .active {
 
 .subscribe-section .subscribe {
   padding: 5rem 0.3rem;
-  background: url(/Images/subscribe-bg.png) no-repeat;
+  background: url(../Images/subscribe-bg.png) no-repeat;
   margin: 0px auto;
 }
 
