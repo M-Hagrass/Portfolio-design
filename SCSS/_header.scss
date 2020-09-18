@@ -1,6 +1,8 @@
-// Start mobile and small devices styles with width at breakpoints from "XS 0PX" to "MD 767px"
 
+// Mobile and small devices styles with width at breakpoints from "XS 0PX" to "MD 767px"
 nav {
+  box-shadow: 0px 0px 8px $primary-color;
+  background-color: #ffffffe6;
   .custom-toggler {
     border-color: #4458dc;
     margin-top: 5px;
@@ -14,7 +16,6 @@ nav {
   } 
     
   ul {
-    margin-top: 15px;
     li{ 
         a {
           color: $title-color;
@@ -31,15 +32,14 @@ nav {
   }
 }
 
-// Start medium and lage screen devices styles with width at breakpoints from "MD 768PX" to "XL >1200px"
+// Medium and lage screen devices styles with width at breakpoints from "MD 768PX" to "XL >1200px"
 
 @media (min-width: 992px){
   nav {
     ul{
       li {
-        padding: 0 0 0 3rem !important;
         a {
-          padding: 0 !important;
+          padding: .5rem 1.4rem !important;
           &:hover{background-color: transparent !important;}
         }
       }

@@ -1,5 +1,4 @@
 
-
   // Isotope and Magnific popup JS libraries for projects area section
   $(document).ready(function () {
       let $btns = $('.projects-area .button-group button');
